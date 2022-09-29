@@ -13,6 +13,7 @@
     <link rel="canonical" href="Replace_with_your_PAGE_URL" />
 
     <!-- Stylesheets -->
+    <link href="css/extra.css" rel="stylesheet" />
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/responsive.css" rel="stylesheet" />
@@ -34,12 +35,22 @@
     />
 
     <!-- Add site Favicon -->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
-    <meta name="msapplication-TileImage" content="images/favicon.png" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <meta name="msapplication-TileImage" content="images/logo.png" />
   </head>
 
   <body>
+    <!-- <div id="preloader-active">
+      <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+          <div class="preloader-circle"></div>
+          <div class="preloader-img pere-text">
+            <img src="assets/img/logo/loder.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div> -->
     <div class="page-wrapper">
       <!-- Main Header-->
       <header class="main-header">
@@ -87,22 +98,22 @@
                       <li class="dropdown">
                         <a href="#">Υπηρεσιες</a>
                         <ul>
-                          <li><a href="blog.html">Υπηρεσίες</a></li>
-                          <li><a href="blog-detail.html">Φωτογραφίες</a></li>
-                          <li><a href="blog-detail.html">Κριτικές</a></li>
+                          <li><a href="#services">Υπηρεσίες</a></li>
+                          <li><a href="#gallery">Φωτογραφίες</a></li>
+                          <li><a href="#reviews">Κριτικές</a></li>
                         </ul>
                       </li>
                     </ul>
                     &nbsp; &nbsp; &nbsp;
                     <ul class="navigation right-nav clearfix">
                       <li class="dropdown">
-                        <a href="#">εμεις</a>
+                        <a href="#about">εμεις</a>
                         <ul>
-                          <li><a href="about.html">Ποιοί είμαστε</a></li>
-                          <li><a href="pricing.html">Ομάδα</a></li>
+                          <li><a href="#about">Ποιοί είμαστε</a></li>
+                          <li><a href="#team">Ομάδα</a></li>
                         </ul>
                       </li>
-                      <li><a href="contact.html">Επικοινωνια</a></li>
+                      <li><a href="#contact">Επικοινωνια</a></li>
                     </ul>
                   </div>
                 </nav>
@@ -130,12 +141,13 @@
                 <div class="outer-box clearfix">
                   <div class="cart-box">
                     <button
-                      class="cart-box-btn dropdown-toggle"
+                      class="cart-box-btn"
                       type="button"
                       id="dropdownMenu"
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
+                      onclick="location.href='http://www.ihair.gr/mybarber'"
                     >
                       Ραντεβού
                     </button>
@@ -181,7 +193,9 @@
                   <h1>Scissors & Blades</h1>
                   <h2>Barbering at its best</h2>
                   <div class="btn-box text-center">
-                    <a href="contact.html" class="theme-btn btn-style-one"
+                    <a
+                      onclick="location.href='http://www.ihair.gr/mybarber'"
+                      class="theme-btn btn-style-one"
                       ><span class="txt">Κλεισε Ραντεβου</span></a
                     >
                   </div>
@@ -192,7 +206,7 @@
 
           <div
             class="slide"
-            style="background-image: url(images/main-slider/1.jpg)"
+            style="background-image: url(images/main-slider/2.jpg)"
           >
             <div class="auto-container">
               <div class="content-boxed">
@@ -201,7 +215,9 @@
                   <h1>Scissors & Blades</h1>
                   <h2>Let your hair do the talking</h2>
                   <div class="btn-box text-center">
-                    <a href="contact.html" class="theme-btn btn-style-one"
+                    <a
+                      onclick="location.href='http://www.ihair.gr/mybarber'"
+                      class="theme-btn btn-style-one"
                       ><span class="txt">Κλεισε Ραντεβου</span></a
                     >
                   </div>
@@ -212,7 +228,7 @@
 
           <div
             class="slide"
-            style="background-image: url(images/main-slider/1.jpg)"
+            style="background-image: url(images/main-slider/3.jpg)"
           >
             <div class="auto-container">
               <div class="content-boxed">
@@ -224,8 +240,10 @@
                     & Barber
                   </h2>
                   <div class="btn-box text-center">
-                    <a href="contact.html" class="theme-btn btn-style-one"
-                      ><span class="txt">Reservation</span></a
+                    <a
+                      onclick="location.href='http://www.ihair.gr/mybarber'"
+                      class="theme-btn btn-style-one"
+                      ><span class="txt">Κλεισε Ραντεβου</span></a
                     >
                   </div>
                 </div>
@@ -245,7 +263,7 @@
       <!-- End Banner Section -->
 
       <!-- Reserve Section -->
-      <section class="reserve-section">
+      <section class="reserve-section" id="about">
         <div class="auto-container">
           <div class="inner-container">
             <div class="row clearfix">
@@ -261,18 +279,26 @@
               <!-- Content Column -->
               <div class="content-column col-lg-7 col-md-12 col-sm-12">
                 <div class="inner-column">
-                  <h2>
-                    Scissors & Blades <br />
-                    Barbershop
-                  </h2>
+                  <h2>Ποιοί είμαστε</h2>
+                  <h3>Η εμπειρια μας μιλαει για εμας!</h3>
                   <p>
-                    We are a fairly small, flexible design studio that designs
-                    for print and web. Whether you need to create a brand from
-                    scratch, including marketing and a beautiful and functional
-                    website or whether you are looking for <br />
-                    a great experience.
+                    Do you need a great haircut and shave? You simply cannot
+                    trust just any barber to cut your hair or shave your beard.
+                    At Scissors & Blades's Barber Shop, we specialize in
+                    delivering the ultimate barber shop experience by giving
+                    haircuts and shaves that are truly exceptional. From the
+                    moment our clients walk through the door, they instantly
+                    realize that we are a barber shop that values excellent
+                    customer service and above all else amazing shaves and
+                    haircuts. From any old school shave or classic haircut style
+                    to even the most popular current ones, our barbers create
+                    amazing looks that enhance people’s appearance and get them
+                    noticed whether they like it or not. So do you need a great
+                    shave and a haircut? If the answer is yes, then visit us
+                    today for the ultimate shave and a haircut experience that
+                    will keep you coming back time and time again.
                   </p>
-                  <div class="reserve">Τηλέφωνο</div>
+                  <div class="reserve">Τηλεφωνο</div>
                   <a href="tel:123-456-7899" class="phone">123-456-7899</a>
                 </div>
               </div>
@@ -283,7 +309,7 @@
       <!-- End Reserve Section -->
 
       <!-- Services Section -->
-      <section class="services-section">
+      <section class="services-section" id="services">
         <div class="auto-container">
           <!-- Section Title -->
           <div class="section-title centered">
@@ -297,7 +323,7 @@
                   <img src="images/resource/service-1.jpg" alt="" />
                 </div>
                 <div class="lower-content">
-                  <h4><a href="blog-detail.html">Moustache Trim</a></h4>
+                  <h4><a href="#">Τριμάρισμα μουστάκι</a></h4>
                   <p>Praesent volutpat ut nisl inhend Vestibulum ante ipsum.</p>
                 </div>
               </div>
@@ -310,7 +336,7 @@
                   <img src="images/resource/service-2.jpg" alt="" />
                 </div>
                 <div class="lower-content">
-                  <h4><a href="blog-detail.html">Beard Trim</a></h4>
+                  <h4><a href="#">Περιποίηση γενειάδας</a></h4>
                   <p>Praesent volutpat ut nisl inhend Vestibulum ante ipsum.</p>
                 </div>
               </div>
@@ -323,7 +349,7 @@
                   <img src="images/resource/service-3.jpg" alt="" />
                 </div>
                 <div class="lower-content">
-                  <h4><a href="blog-detail.html">Haircut</a></h4>
+                  <h4><a href="#">Κούρεμα</a></h4>
                   <p>Praesent volutpat ut nisl inhend Vestibulum ante ipsum.</p>
                 </div>
               </div>
@@ -336,7 +362,7 @@
                   <img src="images/resource/service-4.jpg" alt="" />
                 </div>
                 <div class="lower-content">
-                  <h4><a href="blog-detail.html">Hot Towel Face Shave</a></h4>
+                  <h4><a href="#">Ξύρισμα</a></h4>
                   <p>Praesent volutpat ut nisl inhend Vestibulum ante ipsum.</p>
                 </div>
               </div>
@@ -349,7 +375,7 @@
                   <img src="images/resource/service-5.jpg" alt="" />
                 </div>
                 <div class="lower-content">
-                  <h4><a href="blog-detail.html">Clipper Cut</a></h4>
+                  <h4><a href="#">Παραδοσιακό ξύρισμα</a></h4>
                   <p>Praesent volutpat ut nisl inhend Vestibulum ante ipsum.</p>
                 </div>
               </div>
@@ -362,7 +388,7 @@
                   <img src="images/resource/service-6.jpg" alt="" />
                 </div>
                 <div class="lower-content">
-                  <h4><a href="blog-detail.html">Facial & Massage</a></h4>
+                  <h4><a href="#">Λούσιμο & περιποίηση</a></h4>
                   <p>Praesent volutpat ut nisl inhend Vestibulum ante ipsum.</p>
                 </div>
               </div>
@@ -375,7 +401,7 @@
                   <img src="images/resource/service-7.jpg" alt="" />
                 </div>
                 <div class="lower-content">
-                  <h4><a href="blog-detail.html">Barber Store</a></h4>
+                  <h4><a href="#">Αγορά προϊόντων</a></h4>
                   <p>Praesent volutpat ut nisl inhend Vestibulum ante ipsum.</p>
                 </div>
               </div>
@@ -386,7 +412,7 @@
       <!-- End Services Section -->
 
       <!-- Gallery Section -->
-      <section class="gallery-section">
+      <section class="gallery-section" id="gallery">
         <!-- Gallery Masonry -->
         <div class="sortable-masonry">
           <div class="auto-container">
@@ -404,24 +430,24 @@
                         data-role="button"
                         data-filter=".all"
                       >
-                        all
+                        Ολες
                       </li>
                       <li class="filter" data-role="button" data-filter=".hair">
-                        hair
+                        Μαλλια
                       </li>
                       <li
                         class="filter"
                         data-role="button"
                         data-filter=".beard"
                       >
-                        beard
+                        Γενεια
                       </li>
                       <li
                         class="filter"
                         data-role="button"
                         data-filter=".moustache"
                       >
-                        moustache
+                        Μουστακι
                       </li>
                     </ul>
                   </div>
@@ -532,8 +558,8 @@
               <!-- Price Block -->
               <div class="price-block">
                 <div class="inner-box">
-                  <div class="price">$8.5</div>
-                  <h4><a href="pricing.html">Classic haircut</a></h4>
+                  <div class="price">€8.5</div>
+                  <h4><a href="#">Classic haircut</a></h4>
                   <p>Lorem ipsum dolor sit amet, consetetur</p>
                 </div>
               </div>
@@ -541,9 +567,9 @@
               <!-- Price Block -->
               <div class="price-block">
                 <div class="inner-box">
-                  <div class="price">$12.5</div>
+                  <div class="price">€12.5</div>
                   <h4>
-                    <a href="pricing.html">Classic haircut & hair washing</a>
+                    <a href="#">Classic haircut & hair washing</a>
                   </h4>
                   <p>Lorem ipsum dolor sit amet, consetetur</p>
                 </div>
@@ -552,8 +578,8 @@
               <!-- Price Block -->
               <div class="price-block">
                 <div class="inner-box">
-                  <div class="price">$5.5</div>
-                  <h4><a href="pricing.html">Hair washing</a></h4>
+                  <div class="price">€5.5</div>
+                  <h4><a href="#">Hair washing</a></h4>
                   <p>Lorem ipsum dolor sit amet, consetetur</p>
                 </div>
               </div>
@@ -561,9 +587,9 @@
               <!-- Price Block -->
               <div class="price-block">
                 <div class="inner-box">
-                  <div class="price">$8.5</div>
+                  <div class="price">€8.5</div>
                   <h4>
-                    <a href="pricing.html">Trimming & arranging long beard </a>
+                    <a href="#">Trimming & arranging long beard </a>
                   </h4>
                   <p>Lorem ipsum dolor sit amet, consetetur</p>
                 </div>
@@ -572,8 +598,8 @@
               <!-- Price Block -->
               <div class="price-block">
                 <div class="inner-box">
-                  <div class="price">$2.5</div>
-                  <h4><a href="pricing.html">Moustache Trim</a></h4>
+                  <div class="price">€2.5</div>
+                  <h4><a href="#">Moustache Trim</a></h4>
                   <p>Lorem ipsum dolor sit amet, consetetur</p>
                 </div>
               </div>
@@ -583,8 +609,8 @@
               <!-- Price Block -->
               <div class="price-block">
                 <div class="inner-box">
-                  <div class="price">$8.5</div>
-                  <h4><a href="pricing.html">Beard washing</a></h4>
+                  <div class="price">€8.5</div>
+                  <h4><a href="#">Beard washing</a></h4>
                   <p>Lorem ipsum dolor sit amet, consetetur</p>
                 </div>
               </div>
@@ -592,9 +618,9 @@
               <!-- Price Block -->
               <div class="price-block">
                 <div class="inner-box">
-                  <div class="price">$12.5</div>
+                  <div class="price">€12.5</div>
                   <h4>
-                    <a href="pricing.html">Stylization & arranging beard</a>
+                    <a href="#">Stylization & arranging beard</a>
                   </h4>
                   <p>Lorem ipsum dolor sit amet, consetetur</p>
                 </div>
@@ -603,8 +629,8 @@
               <!-- Price Block -->
               <div class="price-block">
                 <div class="inner-box">
-                  <div class="price">$6.5</div>
-                  <h4><a href="pricing.html">Beard & hair washing</a></h4>
+                  <div class="price">€6.5</div>
+                  <h4><a href="#">Beard & hair washing</a></h4>
                   <p>Lorem ipsum dolor sit amet, consetetur</p>
                 </div>
               </div>
@@ -612,8 +638,8 @@
               <!-- Price Block -->
               <div class="price-block">
                 <div class="inner-box">
-                  <div class="price">$12.5</div>
-                  <h4><a href="pricing.html">Facial Massage</a></h4>
+                  <div class="price">€12.5</div>
+                  <h4><a href="#">Facial Massage</a></h4>
                   <p>Lorem ipsum dolor sit amet, consetetur</p>
                 </div>
               </div>
@@ -621,8 +647,8 @@
               <!-- Price Block -->
               <div class="price-block">
                 <div class="inner-box">
-                  <div class="price">$8.5</div>
-                  <h4><a href="pricing.html">Clipper Cut STyle</a></h4>
+                  <div class="price">€8.5</div>
+                  <h4><a href="#">Clipper Cut STyle</a></h4>
                   <p>Lorem ipsum dolor sit amet, consetetur</p>
                 </div>
               </div>
@@ -636,6 +662,7 @@
       <section
         class="testimonial-section"
         style="background-image: url(images/background/1.jpg)"
+        id="reviews"
       >
         <div class="auto-container">
           <!-- Title Box -->
@@ -674,7 +701,7 @@
                       <span class="fa fa-star"></span>
                     </div>
                     <div class="author-info">
-                      aslam hasib - <span>Web Developer</span>
+                      the godfather - <span>Web Developer</span>
                     </div>
                   </div>
                 </div>
@@ -701,7 +728,7 @@
                       <span class="fa fa-star"></span>
                     </div>
                     <div class="author-info">
-                      aslam hasib - <span>Web Developer</span>
+                      the godfather - <span>Web Developer</span>
                     </div>
                   </div>
                 </div>
@@ -728,7 +755,7 @@
                       <span class="fa fa-star"></span>
                     </div>
                     <div class="author-info">
-                      aslam hasib - <span>Web Developer</span>
+                      the godfather - <span>Web Developer</span>
                     </div>
                   </div>
                 </div>
@@ -755,7 +782,7 @@
                       <span class="fa fa-star"></span>
                     </div>
                     <div class="author-info">
-                      aslam hasib - <span>Web Developer</span>
+                      the godfather - <span>Web Developer</span>
                     </div>
                   </div>
                 </div>
@@ -782,7 +809,7 @@
                       <span class="fa fa-star"></span>
                     </div>
                     <div class="author-info">
-                      aslam hasib - <span>Web Developer</span>
+                      the godfather - <span>Web Developer</span>
                     </div>
                   </div>
                 </div>
@@ -809,47 +836,16 @@
                       <span class="fa fa-star"></span>
                     </div>
                     <div class="author-info">
-                      aslam hasib - <span>Web Developer</span>
+                      the godfather - <span>Web Developer</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!--Product Thumbs Carousel-->
+            <!-- Product Thumbs Carousel -->
             <div class="client-thumb-outer">
-              <div class="client-thumbs-carousel owl-carousel owl-theme">
-                <div class="thumb-item">
-                  <figure class="thumb-box">
-                    <img src="images/resource/author-1.jpg" alt="" />
-                  </figure>
-                </div>
-                <div class="thumb-item">
-                  <figure class="thumb-box">
-                    <img src="images/resource/author-2.jpg" alt="" />
-                  </figure>
-                </div>
-                <div class="thumb-item">
-                  <figure class="thumb-box">
-                    <img src="images/resource/author-3.jpg" alt="" />
-                  </figure>
-                </div>
-                <div class="thumb-item">
-                  <figure class="thumb-box">
-                    <img src="images/resource/author-1.jpg" alt="" />
-                  </figure>
-                </div>
-                <div class="thumb-item">
-                  <figure class="thumb-box">
-                    <img src="images/resource/author-2.jpg" alt="" />
-                  </figure>
-                </div>
-                <div class="thumb-item">
-                  <figure class="thumb-box">
-                    <img src="images/resource/author-3.jpg" alt="" />
-                  </figure>
-                </div>
-              </div>
+              <div class="client-thumbs-carousel owl-carousel owl-theme"></div>
             </div>
           </div>
         </div>
@@ -857,7 +853,7 @@
       <!-- End Testimonial Section -->
 
       <!-- Team Section -->
-      <section class="team-section">
+      <section class="team-section" id="team">
         <div class="auto-container">
           <div class="section-title centered light">
             <h2>Ομάδα</h2>
@@ -871,7 +867,7 @@
                 data-wow-duration="1500ms"
               >
                 <div class="image">
-                  <a href="about.html"
+                  <a href="#"
                     ><img src="images/resource/team-1.jpg" alt=""
                   /></a>
                   <ul class="social-icons">
@@ -893,16 +889,10 @@
                         class="icofont-instagram"
                       ></a>
                     </li>
-                    <li>
-                      <a
-                        href="http://linkedin.com/"
-                        class="icofont-linkedin"
-                      ></a>
-                    </li>
                   </ul>
                 </div>
                 <div class="lower-content">
-                  <h4><a href="about.html">Edward Eric Jr</a></h4>
+                  <h4><a href="#">Edward Eric Jr</a></h4>
                   <div class="designation">Hair & Beard Stylist</div>
                 </div>
               </div>
@@ -916,7 +906,7 @@
                 data-wow-duration="1500ms"
               >
                 <div class="image">
-                  <a href="about.html"
+                  <a href="#"
                     ><img src="images/resource/team-2.jpg" alt=""
                   /></a>
                   <ul class="social-icons">
@@ -938,16 +928,10 @@
                         class="icofont-instagram"
                       ></a>
                     </li>
-                    <li>
-                      <a
-                        href="http://linkedin.com/"
-                        class="icofont-linkedin"
-                      ></a>
-                    </li>
                   </ul>
                 </div>
                 <div class="lower-content">
-                  <h4><a href="about.html">Tom Holland</a></h4>
+                  <h4><a href="#">Tom Holland</a></h4>
                   <div class="designation">Clipper Cut Stylist</div>
                 </div>
               </div>
@@ -961,7 +945,7 @@
                 data-wow-duration="1500ms"
               >
                 <div class="image">
-                  <a href="about.html"
+                  <a href="#"
                     ><img src="images/resource/team-3.jpg" alt=""
                   /></a>
                   <ul class="social-icons">
@@ -979,20 +963,14 @@
                     </li>
                     <li>
                       <a
-                        href="http://google.com/"
+                        href="http://instagram.com/"
                         class="icofont-instagram"
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="http://linkedin.com/"
-                        class="icofont-linkedin"
                       ></a>
                     </li>
                   </ul>
                 </div>
                 <div class="lower-content">
-                  <h4><a href="about.html">Novad Erakovic</a></h4>
+                  <h4><a href="#">Dani Daniel</a></h4>
                   <div class="designation">Beard Trim & Shaving Man</div>
                 </div>
               </div>
@@ -1007,14 +985,14 @@
         class="main-footer"
         style="background-image: url(images/background/2.jpg)"
       >
-        <div class="auto-container">
+        <div class="auto-container" id="contact">
           <!--Widgets Section-->
           <div class="widgets-section">
             <div class="row clearfix">
               <!-- Footer Column -->
-              <div class="footer-column col-lg-4 col-md-6 col-sm-12">
+              <div class="footer-column col-lg-5 col-md-6 col-sm-12">
                 <div class="footer-widget office-widget">
-                  <h4>Τοποθεσια</h4>
+                  <h4>Επικοινωνια</h4>
                   <ul class="location-list">
                     <li>
                       Εδώ <br />
@@ -1041,12 +1019,7 @@
                         class="icofont-facebook"
                       ></a>
                     </li>
-                    <li class="google">
-                      <a
-                        href="https://www.google.com/"
-                        class="icofont-google-plus"
-                      ></a>
-                    </li>
+
                     <li class="instagram">
                       <a
                         href="https://www.instagram.com/"
@@ -1058,7 +1031,7 @@
               </div>
 
               <!-- Footer Column -->
-              <div class="footer-column col-lg-4 col-md-12 col-sm-12">
+              <div class="footer-column col-lg-2 col-md-12 col-sm-12">
                 <div class="footer-widget logo-widget">
                   <div class="logo">
                     <a href="index.html"
@@ -1069,18 +1042,18 @@
               </div>
 
               <!-- Footer Column -->
-              <div class="footer-column col-lg-4 col-md-6 col-sm-12">
+              <div class="footer-column col-lg-5 col-md-6 col-sm-12">
                 <div class="footer-widget twitter-widget">
-                  <h4>twitter</h4>
-                  <div class="tweet">
-                    Looking for a Creative PSD Template? <br />
-                    It here: <a href="#"> https://tf.net/OAWS890a</a><br />
-                    <div class="post-date">2 days ago</div>
-                  </div>
-                  <div class="tweet">
-                    You need an image stock <br />
-                    It here: <a href="#"> https://uph.com/567AW1</a><br />
-                    <div class="post-date">4 days ago</div>
+                  <h4>Τοποθεσια</h4>
+                  <div class="auto-container">
+                    <!-- Map Outer -->
+                    <div class="map-outer">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805184.6331292129!2d144.49266890254142!3d-37.97123689954809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2s!4v1574408946759!5m2!1sen!2s"
+                        style="border: 0"
+                        allowfullscreen=""
+                      ></iframe>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1126,6 +1099,7 @@
       <span class="fa fa-arrow-circle-up"></span>
     </div>
 
+    <script src="js/main.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
